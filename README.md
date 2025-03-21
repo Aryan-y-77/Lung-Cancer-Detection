@@ -1,7 +1,11 @@
-# Lung Cancer Classification Using CNN
+# Lung Cancer Classification Using CNN & ResNet
 
 ## 📌 Project Overview
-This project is a **Deep Learning-based image classification model** that detects **lung cancer** using histopathological images. The dataset consists of lung tissue images categorized into different classes. A **Convolutional Neural Network (CNN)** is trained to classify these images into Normal, Adenocarcinoma, and Squamous Cell Carcinoma.
+This project involves building **Deep Learning-based image classification models** to detect **lung cancer** using histopathological images. Two approaches are implemented:
+1. A **Convolutional Neural Network (CNN)**
+2. A **ResNet-based model for improved feature extraction**
+
+Both models classify images into Normal, Adenocarcinoma, and Squamous Cell Carcinoma categories.
 
 ## 📂 Dataset
 **Source**: [Kaggle - Lung and Colon Cancer Histopathological Images](https://www.kaggle.com/datasets/andrewmvd/lung-and-colon-cancer-histopathological-images)
@@ -38,20 +42,42 @@ This project is a **Deep Learning-based image classification model** that detect
    python train.py
    ```
 
-## 🏗️ Model Architecture
-The CNN model consists of:
+## 🏗️ Model Architectures
+### CNN Model:
 - **Convolutional layers** for feature extraction
 - **MaxPooling layers** for dimensionality reduction
 - **Fully Connected layers** for classification
 - **Softmax activation** for multi-class output
 
+### ResNet Model:
+- **Pretrained ResNet layers** for robust feature extraction
+- **Global Average Pooling** to reduce dimensionality
+- **Fully Connected layers** for final classification
+- **Softmax activation** for multi-class output
+
 ## 🎯 Performance Metrics
+### CNN Model:
 - **Accuracy:** 95.53% on validation data
 - **Loss:** 0.1426
-- **Confusion Matrix & Classification Report** used for evaluation
 
-## 🖼️ Testing the Model
-You can test the trained model on a custom image:
+### ResNet Model:
+- **Accuracy:** 97.12% on validation data
+- **Loss:** 0.0984
+
+Both models were evaluated using the **Confusion Matrix** and **Classification Report**.
+
+### 🎨 Confusion Matrix
+Below is the confusion matrix visualization for both models:
+
+
+## 📈 Training & Validation Performance
+The accuracy and loss plots for both models over training epochs:
+
+![Training Accuracy & Loss - CNN](training_plot_cnn.png)
+![Training Accuracy & Loss - ResNet](training_plot_resnet.png)
+
+## 🖼️ Testing the Models
+You can test a trained model on a custom image:
 ```python
 from tensorflow.keras.models import load_model
 import cv2
@@ -66,9 +92,8 @@ print("Predicted Class:", np.argmax(prediction))
 ```
 
 
-## 📬 Contact
+## 💌 Contact
 For queries, feel free to reach out!
 - **Email:** aryanyadavgr10@example.com
 - **GitHub:** [your-username](https://github.com/Aryan-y-77)
-
 
