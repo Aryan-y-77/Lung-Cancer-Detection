@@ -65,12 +65,10 @@ prediction = model.predict(img)
 print("Predicted Class:", np.argmax(prediction))
 ```
 
-## 📜 License
-This project is open-source and available under the **MIT License**.
 
 ## 📬 Contact
 For queries, feel free to reach out!
-- **Email:** your.email@example.com
-- **GitHub:** [your-username](https://github.com/your-username)
+- **Email:** aryanyadavgr10@example.com
+- **GitHub:** [your-username](https://github.com/Aryan-y-77)
 
 
