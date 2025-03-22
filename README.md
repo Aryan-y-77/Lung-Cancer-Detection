@@ -66,8 +66,6 @@ Both models classify images into Normal, Adenocarcinoma, and Squamous Cell Carci
 
 Both models were evaluated using the **Confusion Matrix** and **Classification Report**.
 
-### 🎨 Confusion Matrix
-Below is the confusion matrix visualization for both models:
 
 
 ## 📈 Training & Validation Performance
@@ -95,5 +93,5 @@ print("Predicted Class:", np.argmax(prediction))
 ## 💌 Contact
 For queries, feel free to reach out!
 - **Email:** aryanyadavgr10@example.com
-- **GitHub:** [your-username](https://github.com/Aryan-y-77)
+- **GitHub:** [Aryan-y-77](https://github.com/Aryan-y-77)
 
